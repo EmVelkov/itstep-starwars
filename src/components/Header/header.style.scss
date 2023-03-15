@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    flex-direction: column;
+
+    img {
+        width: 80px;
+    }
+
+    nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 18px;
+            transition: all 0.3s ease-in;
+            margin-left: 20px;
+
+            &:hover {
+                color: #da9003;
+            }
+        }
+
+        svg {
+            margin-right: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav.navigation {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px;
+        margin-bottom: 40px;
+
+        a {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    }
+}

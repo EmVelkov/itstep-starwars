@@ -1,0 +1,35 @@
+.card {
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    &:hover {
+        .card_title {
+            background-color: #e5e5e5;
+            color: #000000;
+            font-weight: bold;
+        }
+    }
+
+    &_image {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    &_title {
+        background: #da9003;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease-in;
+        height: 40px;
+        max-width: 300px;
+
+        &:hover {
+            background-color: #e5e5e5;
+            color: #000000;
+            font-weight: bold;
+        }
+
+    }
+}
